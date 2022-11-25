@@ -1,11 +1,12 @@
-package com.pluralsight.service;
+package com.pluralsight.conference.service;
 
-import com.pluralsight.model.Speaker;
-import com.pluralsight.repository.HibernateSpeakerRepositoryImpl;
-import com.pluralsight.repository.SpeakerRepository;
+import com.pluralsight.conference.model.Speaker;
+import com.pluralsight.conference.repository.SpeakerRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service("speakerService")
 public class SpeakerServiceImpl implements SpeakerService {
 
     private final SpeakerRepository repository;

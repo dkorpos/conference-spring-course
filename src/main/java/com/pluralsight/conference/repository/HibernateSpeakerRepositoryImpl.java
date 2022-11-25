@@ -1,9 +1,11 @@
-package com.pluralsight.repository;
+package com.pluralsight.conference.repository;
 
-import com.pluralsight.model.Speaker;
+import com.pluralsight.conference.model.Speaker;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository("speakerRepository")
 public class HibernateSpeakerRepositoryImpl implements SpeakerRepository {
 
     @Override
